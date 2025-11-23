@@ -1,0 +1,14 @@
+# StartupCouncil Landing Page
+# https://council-landing.vercel.app
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Performance optimization
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://council-landing.vercel.app/sitemap.xml
