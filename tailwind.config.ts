@@ -9,28 +9,27 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: '#000000',
-        foreground: '#ffffff',
-        muted: {
-          DEFAULT: '#888888',
-          foreground: '#666666',
-        },
-        accent: {
-          DEFAULT: '#0066FF',
-          foreground: '#ffffff',
-        },
+        primary: '#C15F3C',
+        background: '#F4F3EE',
+        surface: '#FFFFFF',
+        muted: '#B1ADA1',
+        foreground: '#000000',
+        naval: '#2E7D32',
+        elon: '#E53935',
+        larry: '#1565C0',
+        alex: '#F57C00',
+        pavel: '#5E35B1',
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'sans-serif'],
+        mono: ['Fira Code', 'Fira Mono', 'ui-monospace', 'monospace'],
+        sans: ['Fira Code', 'Fira Mono', 'ui-monospace', 'monospace'],
       },
       animation: {
         'fade-up': 'fadeUp 0.5s ease-out',
         'fade-in': 'fadeIn 0.3s ease-out',
         'slide-up': 'slideUp 0.4s ease-out',
         'scale-in': 'scaleIn 0.3s ease-out',
-        'glow': 'glow 2s ease-in-out infinite',
         'float': 'float 6s ease-in-out infinite',
-        'shimmer': 'shimmer 2s linear infinite',
         'gradient': 'gradient 8s ease infinite',
       },
       keyframes: {
@@ -50,30 +49,14 @@ const config: Config = {
           '0%': { transform: 'scale(0.9)', opacity: '0' },
           '100%': { transform: 'scale(1)', opacity: '1' },
         },
-        glow: {
-          '0%, 100%': { opacity: '0.5' },
-          '50%': { opacity: '1' },
-        },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-10px)' },
-        },
-        shimmer: {
-          '0%': { backgroundPosition: '-1000px 0' },
-          '100%': { backgroundPosition: '1000px 0' },
         },
         gradient: {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
         },
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-shine': 'linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.7) 50%, transparent 60%)',
-      },
-      backdropBlur: {
-        xs: '2px',
       },
     },
   },
